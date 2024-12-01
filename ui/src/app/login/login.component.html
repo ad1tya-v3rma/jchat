@@ -1,0 +1,16 @@
+<div class="background">
+</div>
+<div class="cover">
+</div>
+<button *ngIf="!isVisible" (click)="toggle()">click to login</button>
+
+<div *ngIf="isVisible" class="form-container" [@enterAnimation]>
+  <h1>LOGIN</h1>
+  <div class="input-container-parent">
+    <div class="input-container">
+    <input type="text" placeholder="enter username">
+    <input type="text" placeholder="enter password">
+      <a mat-button href="home">submit</a>
+    </div>
+  </div>
+</div>
